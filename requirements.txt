@@ -1,0 +1,4 @@
+fastai==2.7.10
+Flask==2.2.2
+line_bot_sdk==2.4.1
+Pillow==9.4.0
