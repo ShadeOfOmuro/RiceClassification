@@ -48,6 +48,19 @@ def handle_image(event):
     classes = pred[2]
     response = """พบว่าเป็นโรค {} ({}%)""".format(name,round(float(classes[index]),2))
     line_bot_api.reply_message(event.reply_token,TextSendMessage(text=response))
+    if name == 'โรค1' :
+      response = """พบว่าเป็นโรค {} ({}%)""".format(name,round(float(classes[index]),2))
+      line_bot_api.reply_message(event.reply_token,TextSendMessage(text=response))
+    elif name == 'โรค2' :
+      response = """พบว่าเป็นโรค {} ({}%)""".format(name,round(float(classes[index]),2))
+      line_bot_api.reply_message(event.reply_token,TextSendMessage(text=response))
+    elif name == 'โรค3' :
+      response = """พบว่าเป็นโรค {} ({}%)""".format(name,round(float(classes[index]),2))
+      line_bot_api.reply_message(event.reply_token,TextSendMessage(text=response))
+    else :
+      response = """พบว่าเป็นโรค {} ({}%)""".format(name,round(float(classes[index]),2))
+      line_bot_api.reply_message(event.reply_token,TextSendMessage(text=response))
+
 
 
 if __name__ == "__main__":
