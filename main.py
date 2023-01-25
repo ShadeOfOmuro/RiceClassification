@@ -10,9 +10,9 @@ from fastai.vision.all import *
 app = Flask(__name__)
 print("loading model")
 model = load_learner("bestFull.pth",cpu=True)
-ACCESS_TOKEN = "F77aAQiczRnjFDAoaahcP352HXsf3mI92O+1zpHpFe+P/1jbZiN34DGpx62GZDYxeJ/aMNIF8BxVSm70tktkiI82Agjfqs+u3BiHLagq7QqNv0yD9WYa03VA01H2wqg781vtdSt2ibxbfxzBLTc5yQdB04t89/1O/w1cDnyilFU="
+ACCESS_TOKEN = "<TOKEN>"
 line_bot_api = LineBotApi(ACCESS_TOKEN)
-handler = WebhookHandler('3c0352a060105077c4266862efa1e4a6')
+handler = WebhookHandler('<CHANNAL_SECRET>')
 
 @app.route("/")
 def home():
